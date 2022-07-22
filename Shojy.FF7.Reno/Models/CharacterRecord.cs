@@ -48,11 +48,11 @@ public struct CharacterRecord
     [FieldOffset(CharacterOffsets.Name)]
     public readonly CharacterName Name;
 
-    [FieldOffset(CharacterOffsets.EquipedWeapon)]
+    [FieldOffset(CharacterOffsets.EquippedWeapon)]
     public readonly byte Weapon;
-    [FieldOffset(CharacterOffsets.EquipedArmor)]
+    [FieldOffset(CharacterOffsets.EquippedArmor)]
     public readonly byte Armor;
-    [FieldOffset(CharacterOffsets.EquipedAccessory)]
+    [FieldOffset(CharacterOffsets.EquippedAccessory)]
     public readonly byte Accessory;
     [FieldOffset(CharacterOffsets.StatusFlags)]
     public readonly byte Flags;
