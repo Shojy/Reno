@@ -1,5 +1,4 @@
-﻿// ReSharper disable InconsistentNaming
-namespace Shojy.FF7.Reno.Models.Enums;
+﻿namespace Shojy.FF7.Reno.Models.Enums;
 
 [PublicAPI]
 [Flags]

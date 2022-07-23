@@ -12,7 +12,6 @@ public interface IFF7InteractionService
     bool GetData(out SaveMap saveMap, out BattleMap battleMap);
 }
 
-// ReSharper disable once InconsistentNaming
 public class FF7InteractionService : IFF7InteractionService
 {
     private readonly IProcessAccessor _processAccessor;

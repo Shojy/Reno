@@ -12,5 +12,4 @@ public static class ServiceConfiguration
                 .AddSingleton<IFF7InteractionService, FF7InteractionService>();
         return services;
     }
-    
 }

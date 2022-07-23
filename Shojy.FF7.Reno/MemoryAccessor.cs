@@ -29,11 +29,10 @@ public class MemoryAccessor : IMemoryAccessor
 
     public void Close()
     {
-        if (TargetProcessHandle != IntPtr.Zero)
-        {
-            CloseHandle(TargetProcessHandle);
-            TargetProcessHandle = IntPtr.Zero;
-        }
+        if (TargetProcessHandle == IntPtr.Zero) return;
+
+        CloseHandle(TargetProcessHandle);
+        TargetProcessHandle = IntPtr.Zero;
     }
 
     public void Dispose()
