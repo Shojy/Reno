@@ -9,7 +9,10 @@ namespace Shojy.FF7.Reno;
 public interface IFF7InteractionService
 {
     Task<Process> ConnectToGame();
+
     bool GetData(out SaveMap saveMap, out BattleMap battleMap);
+
+    bool GetData(MemoryLocation memoryLocation, out byte[] bytes);
 }
 
 public class FF7InteractionService : IFF7InteractionService
@@ -72,5 +75,10 @@ public class FF7InteractionService : IFF7InteractionService
         }
 
         return state;
+    }
+
+    public bool GetData(MemoryLocation memoryLocation, out byte[] bytes)
+    {
+        return _memoryAccessor.ReadMemory(memoryLocation, out bytes);
     }
 }
