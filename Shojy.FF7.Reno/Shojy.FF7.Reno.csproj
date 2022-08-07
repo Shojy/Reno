@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <Version>0.0.2-pre</Version>
+    <Version>0.0.3-pre</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/Shojy/Reno</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Shojy/Reno</RepositoryUrl>
@@ -13,6 +13,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>(c) 2022 Joshua Moon</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>Joshua Moon (Shojy)</Authors>
   </PropertyGroup>
 
   <ItemGroup>

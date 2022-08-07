@@ -18,16 +18,16 @@ public record struct BattleActor
     public byte Level;
 
     [FieldOffset(BattleMapActorOffsets.CurrentMp)]
-    public byte CurrentMp;
+    public ushort CurrentMp;
 
     [FieldOffset(BattleMapActorOffsets.MaxMp)]
-    public byte MaxMp;
+    public ushort MaxMp;
 
     [FieldOffset(BattleMapActorOffsets.CurrentHp)]
-    public byte CurrentHp;
+    public uint CurrentHp;
 
     [FieldOffset(BattleMapActorOffsets.MaxHp)]
-    public byte MaxHp;
+    public uint MaxHp;
 
     public bool IsBackRow => (Row & 0x40) == 0x40;
 
